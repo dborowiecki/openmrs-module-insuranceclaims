@@ -19,6 +19,10 @@ public class AdminList extends AdministrationSectionExt {
 
 	private static final String MODULE_REFAPP_UI_URL = "insuranceclaims/insuranceclaims.page";
 
+	private static final String SEND_GET_REQUEST_UI_URL = "module/insuranceclaims/insuranceclaims2.form";
+
+	private static final String SEND_POST_REQUEST_UI_URL = "module/insuranceclaims/sendClaim.form";
+
 	private static final String MODULE_LEGACY_UI_URL = "module/insuranceclaims/insuranceclaims.form";
 
 	/**
@@ -47,6 +51,8 @@ public class AdminList extends AdministrationSectionExt {
 
 		map.put(MODULE_LEGACY_UI_URL, MODULE_TITLE_KEY);
 		map.put(MODULE_REFAPP_UI_URL, MODULE_REFAPP_TITLE);
+		map.put(SEND_GET_REQUEST_UI_URL, "Get claim data");
+		map.put(SEND_POST_REQUEST_UI_URL, "Send claim Data");
 
 		return map;
 	}

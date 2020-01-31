@@ -16,3 +16,20 @@
   </tr>
   <% } %>
 </table>
+
+<htmlform>
+
+<p>  Date of encounter: <encounterDate  /> </p>
+
+<p> Health center: <encounterLocation /> </p>
+
+<p>Chest xray finding:  <obs conceptId="12" /> </p>
+
+<p>Clinician's name:<encounterProvider role="Provider" /></p>
+
+<p><submit /></p>
+
+</htmlform>
+
+${ ui.includeFragment("uicommons", "field/datetimepicker", [ id: 'startDate', label: 'START',
+    formFieldName: 'startDate', useTime: '', ]) }
